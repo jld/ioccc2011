@@ -1,0 +1,79 @@
+A D T F
+
+C: F=*(T=F); *T--=D; *(D=T)=A;
+U: A=*D++; D=*D;
+F: T=*++D; *D--=F; A=*(F=D); D=T;
+L(v): A=D; D=v;
+S(v): v=D; D=A;
+R: D=A;
+M: D-=A;
+Z(l): if (!D) goto l;
+
+J(l): R M Z(l)
+SJ(v,l): S(v) M Z(l)
+VC(v): L(v) C S(v)
+VF(v): L(v) F S(v)
+
+X: T=*++D; *D--=A; A=T;
+// T=A; A=*++D; *D--=T;
+
+S(tmp) U U L(tmp) X C VC(trail)
+VF(trail) F X
+
+b: L(marks) U R L(trail) M Z(e) VF(trail) F X J(b) e: VF(marks)
+b: L(m) U R L(t) M Z(e) VF(t) F X J(b) e: VF(m)
+b:L(m)URL(t)MZ(e)VF(t)FXJ(b)e:VF(m)
+b:LmURLtMZeLtFtSFXJle:LmFmS
+
+====
+
+#define Z ; if (A == D) goto
+#define C ; *(T = G) =D ++; D -= (G =* -- T) ||! (G = calloc(2, sizeof(T))); \
+            *T ++ = A; G -= *T --- D; D = T;
+#define F ; A =* D; *D = G; D =* (G =++ D);
+#define U ; A =* D ++; D =* D;
+#define L ; A = D; D =
+#define S     = D; D = A;
+#define X ; T = A; A =* ++D; *D --= T;
+
+#define J; D S Z
+
+
+
+mklit: C x S L x C L x X
+
+jmpfalse: U Z
+jmptrue: U U Z
+
+assign: U L T S U D S L T X C L trail C trail S
+
+
+
+Hey kids, circular lists:
+
+s: L i U L i Z unit
+L i L h S n: U U D S stuff L i U L i S L h Z e D S Z n e:
+
+del: L i U U L i X C L trail C trail S D S Z s
+
+ins: /*o S*/ L h U T S L o L T C L h X
+
+Except that doesn't work, because the clause->literal needs something
+that won't be deleted.  (And it's ugly for the clause list, too.)
+
+b: L i U U Z e; D S stuff L i U i S Z b;
+d: L i U U L i X C L trail C trail S Z b;
+e:
+
+n:      L M U Z e; T S L H Z m L H F H S F X T S Z n;
+m:	L M F M S Z r
+
+
+for c in p:
+  for l in c:
+    U Z d1 U Z d0 
+  L c U U Z unsat L T S U Z next L T U T S [assign] J d0
+
+L old L new Z bees; S old Z top
+
+L p U U Z sat [guess]
