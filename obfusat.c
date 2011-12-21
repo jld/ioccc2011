@@ -14,8 +14,8 @@ t G, H, M;
 #define S     = D; D = A;
 #define X ; T = A; A =* ++D; *D --= T;
 
-#define I(P,a,b,c,B) \
-    a: L P U U Z c; D S B L P U P S Z a; b: L P U U L P X C L H C H S Z a; c:
+#define I(P,B) P##a: L P U U Z P##c; D S B L P U P S Z P##a; \
+               P##b: L P U U L P X C L H C H S Z P##a; P##c:
 
 int main()
 {
@@ -32,8 +32,8 @@ int main()
 	L i L i+n Z ce U T S L c C c S Z rb; ce:
 	L c C L p C p S L N; c S Z rb; re:
 	L p C p S w S o S; pa:
-	L p L c S U U Z sat; I(c,ca,cb,cc,
-	    x S l S I(l,la,lb,lc,
+	L p L c S U U Z sat; I(c,
+	    x S l S I(l,
 		U Z lb U Z cb)
 	    L x U U Z unsat; x S l S L x U Z as);
 	L o L w Z bees; o S Z pa;
