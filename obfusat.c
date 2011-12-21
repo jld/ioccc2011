@@ -31,11 +31,8 @@ int main()
 	L N U c S p S rb: A+=1 == scanf("%d", &n) Z re;
 	L i L i+n Z ce U T S L c C c S Z rb; ce:
 	L c C L p C p S L N; c S Z rb; re:
-	L p C p S w S o S; pa:
-	L p L c S U U Z sat; I(c,
-	    x S l S I(l,
-		U Z lb U Z cb)
-	    L x U U Z unsat; x S l S L x U Z as);
+	L p C p S w S o S; pa: L p L c S U U Z sat;
+	I(c, x S l S I(l, U Z lb U Z cb) L x U U Z unsat; x S l S L x U Z as);
 	L o L w Z bees; o S Z pa;
 as: L l U L w S T S U D S L T X C L H C H S Z cb;
 sat: printf("p SAT\n"); return 0;
