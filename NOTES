@@ -71,9 +71,9 @@ m:	L M F M S Z r
 
 for c in p:
   for l in c:
-    U Z d1 U Z d0 
+    U Z d1 U Z d0
   L c U U Z unsat L T S U Z next L T U T S [assign] J d0
 
-L old L new Z bees; S old Z top
+L old L new Z bees; old S Z top
 
 L p U U Z sat [guess]

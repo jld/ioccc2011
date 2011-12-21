@@ -20,20 +20,25 @@ t G, H, M;
 int main()
 {
 	int n;
-	t p, c, l, x;
+	t p, c, l, i, x, o, w;
 
 	t T, A, D;
 	T=A=D=M=N F C;
 
 	scanf("p cnf %d %*d", &n);
-	l = calloc(2*n+2, sizeof* N);
-	for (l += n; n > 0; --n) { C x S L x C L x X L l[n] S U l[-n] S }
+	i = calloc(2*n+2, sizeof* N);
+	for (i += n; n > 0; --n) { C x S L x C L x X L i[n] S U i[-n] S }
 	L N U c S p S rb: A+=1 == scanf("%d", &n) Z re;
-	L l L l+n Z ce U T S L c C c S Z rb; ce:
+	L i L i+n Z ce U T S L c C c S Z rb; ce:
 	L c C L p C p S L N; c S Z rb; re:
-	L p C p S;
-
-
-
-	return 0;
+	L p C p S w S o S; pa:
+	L p L c S U U Z sat; I(c,ca,cb,cc,
+	    x S l S I(l,la,lb,lc,
+		U Z lb U Z cb)
+	    L x U U Z unsat; x S l S L x U Z as);
+	L o L w Z bees; o S Z pa;
+as: L l U L w S T S U D S L T X C L H C H S Z cb;
+sat: printf("p SAT\n"); return 0;
+unsat: printf("p UNSAT\n"); return 0;
+bees: printf("p BEES\n"); return 0;
 }
