@@ -9,7 +9,7 @@ t G, H, M;
 #define C ; *(T = G) =D ++; D -= (G =* -- T) ||! (G = calloc(2, sizeof* N)); \
 	    *T ++= A; G -=(t) *T --- D; D = T;
 #define F ; A =* D; *D ++= G; D =* (G = D);
-#define U ; A =* D ++; D =* D;
+#define U ; T = A; A =* D ++; D =* D;
 #define L ; A = D; D =
 #define S     = D; D = A;
 #define X ; T = A; A =* ++D; *D --= T;
