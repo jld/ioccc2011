@@ -16,11 +16,12 @@ t G, H, M;
 
 #define I(P,B) P##a: L P U U Z P##c; D S B L P U P S Z P##a; \
                P##b: L P U U L P X C L H C H S Z P##a; P##c:
+#define W ; U D S L T X C L H C H S
 
 int main()
 {
 	int n;
-	t p, c, l, i, x, o;
+	t p, c, l, i, x, o, w;
 
 	t T, A, D;
 	T=A=D=M=N F C;
@@ -31,11 +32,19 @@ int main()
 	L N U c S p S rb: A+=1 == scanf("%d", &n) Z re;
 	L i L i+n Z ce U T S L c C c S Z rb; ce:
 	L c C L p C p S L N; c S Z rb; re:
-	L p C p S o S; pa: L p L c S U U Z sat;
-	I(c, x S l S I(l, U Z lb U Z cb) L x U U Z unsat U Z as);
+	L p C p S o S C w S pa: L p L c S U U Z sat;
+	I(c, x S l S I(l, U Z lb U Z cb) L x U U Z oa U Z as);
 	L o L p Z bees; o S Z pa;
-as: L T U L o S U D S L T X C L H C H S Z cb;
-sat: printf("p SAT\n"); return 0;
+as: L T U L o S W Z cb;
+oa: L M U Z unsat; T S L H Z ob F H S F X D S Z oa;
+ob: L M F M S L w U L D W Z pa;
+bees: L p U U T S U U D S L w X U U L D W L H U L M C M S Z pa;
 unsat: printf("p UNSAT\n"); return 0;
-bees: printf("p BEES\n"); return 0;
+sat: printf("p SAT\n");
+	for (n = 1; i[n]; ++n) {
+		L i[n] U Z ub U Z uc; continue;
+uc: printf("v %d\n", n); continue;
+ub: printf("v %d\n", -n); continue;
+	}
+	return 0;
 }
