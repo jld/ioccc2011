@@ -20,7 +20,7 @@ t G, H, M;
 int main()
 {
 	int n;
-	t p, c, l, i, x, o, w;
+	t p, c, l, i, x, o;
 
 	t T, A, D;
 	T=A=D=M=N F C;
@@ -31,10 +31,10 @@ int main()
 	L N U c S p S rb: A+=1 == scanf("%d", &n) Z re;
 	L i L i+n Z ce U T S L c C c S Z rb; ce:
 	L c C L p C p S L N; c S Z rb; re:
-	L p C p S w S o S; pa: L p L c S U U Z sat;
-	I(c, x S l S I(l, U Z lb U Z cb) L x U U Z unsat; U Z as);
-	L o L w Z bees; o S Z pa;
-as: L T U L w S U D S L T X C L H C H S Z cb;
+	L p C o S p S; pa: L p L c S U U Z sat;
+	I(c, x S l S I(l, U Z lb U Z cb) L x U U Z unsat U Z as);
+	L o L p Z bees; o S Z pa;
+as: L T U L o S U D S L T X C L H C H S Z cb;
 sat: printf("p SAT\n"); return 0;
 unsat: printf("p UNSAT\n"); return 0;
 bees: printf("p BEES\n"); return 0;
