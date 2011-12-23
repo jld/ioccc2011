@@ -31,7 +31,7 @@ int main()
 	L N U c S p S rb: A+=1 == scanf("%d", &n) Z re;
 	L i L i+n Z ce U T S L c C c S Z rb; ce:
 	L c C L p C p S L N; c S Z rb; re:
-	L p C o S p S; pa: L p L c S U U Z sat;
+	L p C p S o S; pa: L p L c S U U Z sat;
 	I(c, x S l S I(l, U Z lb U Z cb) L x U U Z unsat U Z as);
 	L o L p Z bees; o S Z pa;
 as: L T U L o S U D S L T X C L H C H S Z cb;
