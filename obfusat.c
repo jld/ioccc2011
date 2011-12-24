@@ -13,10 +13,11 @@ t G, H, M;
 #define L ; A = D; D =
 #define S     = D; D = A;
 #define X ; T = A; A =* ++D; *D --= T;
+#define Y X C L H C H S
+#define W U D S L T Y Z
 
 #define I(P,B) P##a: L P U U Z P##c; D S B L P U P S Z P##a; \
-               P##b: L P U U L P X C L H C H S Z P##a; P##c:
-#define W ; U D S L T X C L H C H S
+               P##b: L P U U L P Y Z P##a; P##c:
 
 int main()
 {
@@ -35,10 +36,10 @@ int main()
 	L p C p S o S C w S pa: L p L c S U U Z sat;
 	I(c, x S l S I(l, U Z lb U Z cb) L x U U Z oa U Z as);
 	L o L p Z bees; o S Z pa;
-as: L T U L o S W Z cb;
+as: L T U L o S W cb;
 oa: L M U Z unsat; T S L H Z ob F H S F X D S Z oa;
-ob: L M F M S L w U L D W Z pa;
-bees: L p U U T S U U D S L w X U U L D W L H U L M C M S Z pa;
+ob: L M F M S L w U L D W pa;
+bees: L p U U T S U U D S L w Y L H L M C M S L w U U L D W pa;
 unsat: printf("s UNSATISFIABLE\n"); return 0;
 sat: printf("s SATISFIABLE\nv ");
 	for (n = 1; i[n]; ++n) { L i[n] U Z ub U Z uc; continue;
