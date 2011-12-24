@@ -39,12 +39,10 @@ as: L T U L o S W Z cb;
 oa: L M U Z unsat; T S L H Z ob F H S F X D S Z oa;
 ob: L M F M S L w U L D W Z pa;
 bees: L p U U T S U U D S L w X U U L D W L H U L M C M S Z pa;
-unsat: printf("p UNSAT\n"); return 0;
-sat: printf("p SAT\n");
-	for (n = 1; i[n]; ++n) {
-		L i[n] U Z ub U Z uc; continue;
-uc: printf("v %d\n", n); continue;
-ub: printf("v %d\n", -n); continue;
-	}
+unsat: printf("s UNSATISFIABLE\n"); return 0;
+sat: printf("s SATISFIABLE\nv ");
+	for (n = 1; i[n]; ++n) { L i[n] U Z ub U Z uc; continue;
+uc: printf("%d ", n); if (0) ub: printf("%d ", -n);
+	} printf ("0\n");
 	return 0;
 }
