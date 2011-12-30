@@ -77,3 +77,70 @@ for c in p:
 L old L new Z bees; old S Z top
 
 L p U U Z sat [guess]
+
+====
+
+Big Idea: Macro-expand the 3^6 loop.  CBs for begin/atom/enter, w/ level.
+
+Less Big Idea: Choose random literal by choosing random 2-clause, then
+flip for which and negate.
+
+====
+
+0: add "random" literal; save; run once
+0/unsat: revert; retract; 0
+0/sat: 2
+0/bees: 1
+1: save; run fully
+1/unsat: revert; as 0/unsat
+1/sat: 2
+1/bees: 1'
+2: add co-solution; run fully
+2/unsat: revert; done
+2/sat: revert; go 0
+
+====
+
+So, macros.
+
+push nil, [(next thing), cons]*3, nothing
+nothing, [uncons, (next thing)]*3, drop
+
+  "cons": L l F x=A F l S A=x C L l C l S
+"uncons": L l F l S U x=A L l C A=x C l S
+
+#define E(T,B) ; T = A B A = T; 
+
+  "cons": L l F E(x, F l S) C L l C l S
+"uncons": L l F l S U E(x, L l C) C l S
+
+   "lit": L l C l S
+  "drop": L l F l S
+
+A = push nil
+B = push nil
+N = drop; push atom
+E = cons
+
+B = uncons
+N = use but leave
+E = drop
+Z = drop
+
+L N L N C a S
+
+====
+
+...hell.  I can't use macros for this.  Now what.  Main recursion!
+Make argc be an index of the desired thing.  Like, 0-6 for first loop
+nest, 7-13 for the next, &c.  Then factor stuff out and data-drive it.
+
+Also, C F ... L G U L n C n S.  
+
+Start with something simple:
+
+   0:           L N put, rec(n+1)*3, get, x S, prn(x)
+1..5: get, x S, L N put, rec(n+1)*3, get, L x C put
+   6: get, x S,      mkatom,              L x C put
+
+CAAAAAB
