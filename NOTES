@@ -139,8 +139,8 @@ Also, C F ... L G U L n C n S.
 
 Start with something simple:
 
-   0:           L N put, rec(n+1)*3, get, x S, prn(x)
-1..5: get, x S, L N put, rec(n+1)*3, get, L x C put
-   6: get, x S,      mkatom,              L x C put
+   0:           L N put, rec(n+1)*3, get, x S, prn(x)   // 0+2
+1..5: get, x S, L N put, rec(n+1)*3, get, L x C put     // 1+2
+   6: get, x S,      mkatom,              L x C put     // 1+0
 
 CAAAAAB

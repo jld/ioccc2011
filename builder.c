@@ -3,7 +3,7 @@
 
 typedef void **t;
 void *N[] = {N, N};
-t G, H, M;
+t G, H, M=N;
 
 #define Z ; if (A == D) goto
 #define C ; *(T = G) =D ++; D -= (G =* -- T) ||! (G = calloc(2, sizeof* N)); \
@@ -14,40 +14,39 @@ t G, H, M;
 #define S     = D; D = A;
 #define X ; T = A; A =* ++D; *D --= T;
 
-#define T(Q) Q Q Q 
-#define T0(B,Q,E) B Q E 
-#define T1(B,Q,E) B T(T0(B,Q,E)) E 
-#define T2(B,Q,E) B T(T1(B,Q,E)) E
-#define T3(B,Q,E) B T(T2(B,Q,E)) E
-#define T4(B,Q,E) B T(T3(B,Q,E)) E
-#define T5(B,Q,E) B T(T4(B,Q,E)) E
-#define T6(B,Q,E) B T(T5(B,Q,E)) E
+#define E(n) ; main(n, 0);
+#define R    ; return  0 ;
+#define T(B) B B B
+#define Q &n ["BCCCCCA"]
 
-#define E(B) x = A B A = x
-#define LL L a C a S
-#define SS L a F a S
-#define CC L a F E(F a S) C LL
-#define UU SS U E(L a C) C a S
-
-void prn(t T)
+void prn(t T, int l)
 {
-	int n=0;
+	int i, n=0;
+	t A=T;
+
+	if (((t)T[1])[1] == T) {
+		for (i = 0; i < l; ++i) printf(" ");
+		printf("%p = atom\n", (void*)T);
+		return;
+	}
 
 	while (T != N) {
-		printf("%p[%d] = %p\n", (void*)T, n, (void*)T[0]);
-		prn(T[0]);
+		for (i = 0; i < l; ++i) printf(" ");
+		printf("%p[%d] = %p\n", (void*)A, n++, (void*)T[0]);
+		prn(T[0], l+1);
 		T = T[1];
 	}
 }
 
-int main()
+int main(int n, char **v)
 {
 	t x, a;
-
 	t T, A, D;
-	T=A=D=M=N F C;
 
-	C a S T6(L N LL, SS C x S L x C L x X SS, CC);
-	prn(a);
-	return 0;
+	T=A=D=N F C if (v) { E(0) R }
+	if (1 Q) { L G-1 U a S }
+	if (2 Q) { L N C F T(E(n+1)) L G-1 U }
+	else { C x S L x C L x X }
+	if (1 Q) { L a C C F R }
+	a S prn(a, 0) R;
 }
