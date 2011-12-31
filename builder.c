@@ -6,9 +6,9 @@ void *N[] = {N, N};
 t G, H, M=N;
 
 #define Z ; if (A == D) goto
-#define C ; *(T = G) =D ++; D -= (G =* -- T) ||! (G = calloc(2, sizeof* N)); \
-	    *T ++= A; G -=(t) *T --- D; D = T;
-#define F ; A =* D; *D ++= G; D =* (G = D);
+#define C ; *(T =++ G) =D ++; D -= (G =* -- T) ||! (G = calloc(2, sizeof* N)); \
+	     *T ++= A; G -=(t) *T --- D; G -=!! (D = T);
+#define F ; A =* D; *D =G +!!G; D =* (G = D);
 #define U ; T = A; A =* D ++; D =* D;
 #define L ; A = D; D =
 #define S     = D; D = A;
@@ -44,8 +44,8 @@ int main(int n, char **v)
 	t T, A, D;
 
 	T=A=D=N F C if (v) { E(0) R }
-	if (1 Q) { L G-1 U a S }
-	if (2 Q) { L N C F T(E(n+1)) L G-1 U }
+	if (1 Q) { L G U a S }
+	if (2 Q) { L N C F T(E(n+1)) L G U }
 	else { C x S L x C L x X }
 	if (1 Q) { L a C C F R }
 	a S prn(a, 0) R;
