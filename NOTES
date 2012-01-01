@@ -193,3 +193,24 @@ ep-1xF, docover
 
 
 THING: awk '/atom/{if(!a[$1]){a[$1]=++x;a[$2]=-x}$0=$0" "a[$1]}{print}'
+
+====
+
+Printing.
+
+           thing, put T(E(x))
+
+       put T(E(n+1)), U
+c='0', put T(E(n+1)), U, c='\n',         pcz
+       put T(E(n+1)), U
+c='0', put T(E(n+1)), U, A+=c<'0' c='.', pcz
+       put T(E(n+1)), U,
+       c+=c>'/',      U,                 pcz
+
+pcz = Z pr; rp:
+      ...R pr: putchar(c); c='.' Z rp
+
+V(2, c='0') V(3, put TE get, c+=c>'/') U V(2, V(1, A+=c<'/'; c='.', c='\n'), V(1, A++)) pcz
+
+121310
+=>=?=<
