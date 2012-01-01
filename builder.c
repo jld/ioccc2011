@@ -25,9 +25,9 @@ void prn(t T, int l)
 	int i, n=0;
 	t A=T;
 
-	if (((t)T[1])[1] == T) {
+	if (T != N && ((t)T[1])[1] == T) {
 		for (i = 0; i < l; ++i) printf(" ");
-		printf("%p = atom\n", (void*)T);
+		printf("%p %p = atom\n", (void*)T, T[1]);
 		return;
 	}
 
@@ -45,11 +45,11 @@ int main(int n, char **v)
 	t T, A, D;
 
 	T=A=D=N F C if (v) { E(0) L G U a S E(7) L G U x S
-			     L a L x C C F E(12)
+			     L a L x C C F E(12+7*3)
 			     prn(a, 0); printf("-- \n"); prn(x, 0) R }
 	V(3, L G U V(4, F y S,; ) x S,; );
-	V(4, L y V(2, V(1, U y S,; ) L x U x S L T C C F T(E(n+1)),
-		      U L x U L T C L y X),
+	V(4, V(2, T(L y V(1, U y S,; ) L x U x S L T C C F E(n+1)),
+		  L y U L x U L T C L y X),
 	    V(2, V(1, /*!*/ L N L N C, C a S L a C L a X),
 		L N C F T(E(n+1)) L G U));
 	V(3, L x V(4, L y,; ) C C F,; ) R;

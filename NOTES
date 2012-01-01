@@ -180,7 +180,16 @@ ep-2xy, leaf
 ep-2xy, iter1
 ep-2xy, iter2
 
+Alternative: A = atom, D = clause.
+a S L a U /* T = atom, A = junk, D = ccdr */
+L T U L T /* T = ccdr, A = junk, D = !atom */
+L T C L a X
+Could replace C F recurse with this.
+
 get F x S (stuff | put rec*3) L x put
 
 ep-1xF, put-rec
 ep-1xF, docover
+
+
+THING: awk '/atom/{if(!a[$1]){a[$1]=++x;a[$2]=-x}$0=$0" "a[$1]}{print}'
