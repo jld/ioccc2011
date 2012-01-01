@@ -183,7 +183,7 @@ ep-2xy, iter2
 Alternative: A = atom, D = clause.
 a S L a U /* T = atom, A = junk, D = ccdr */
 L T U L T /* T = ccdr, A = junk, D = !atom */
-L T C L a X
+C L a X
 Could replace C F recurse with this.
 
 get F x S (stuff | put rec*3) L x put
