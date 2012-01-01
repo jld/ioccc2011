@@ -143,3 +143,44 @@ Start with something simple:
 1..5: get, x S, L N put, rec(n+1)*3, get, L x C put     // 1+2
    6: get, x S,      mkatom,              L x C put     // 1+0
 
+====
+
+Okay, multiple arguments.
+
+L a C L b C F T S F
+
+L G U gets the first, but need C L G U to get the second.
+
+iter1: get U x S put, rec(n+1)*3, L x put
+iter2: get U C y S, get U x S put, L y F y S put, rec(n+1)*3,
+       L y C y S, L x put, L y F
+
+leaf: instead of put rec*3; a S xget L b S U c S L a L c C L b X
+ But can I make this worse?  With last list on stack,
+ get L a S U C b S L a F L l L b C or something.
+
+Except all of this is horribly broken; iter1 needs to reset the thing
+if the callee destroys it as iter2.  Let's try again.  Tupled?
+
+L x L y C put
+get F y S x S
+
+iter2: (L y U y S L x U x S L T C C F recurse)*3
+iter1: (L y       L x U x S L T C C F recurse)*3
+leaf: L y U L x U L T C L y X
+
+
+ep-none, n-rec-get
+ep-1xC, n-rec-get
+ep-1xC, mkatom
+ep-1xC, mkcls
+
+-------------
+ep-2xy, leaf
+ep-2xy, iter1
+ep-2xy, iter2
+
+get F x S (stuff | put rec*3) L x put
+
+ep-1xF, put-rec
+ep-1xF, docover

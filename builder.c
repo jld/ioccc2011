@@ -17,7 +17,8 @@ t G, H, M=N;
 #define E(n) ; main(n, 0);
 #define R    ; return  0 ;
 #define T(B) B B B
-#define Q &n ["BCCCCCA"]
+#define Q &n ["0111112011137777665776677566777757676775"]
+#define V(n,N,O) ; if (n Q) { N ; } else { O ; }
 
 void prn(t T, int l)
 {
@@ -40,13 +41,15 @@ void prn(t T, int l)
 
 int main(int n, char **v)
 {
-	t x, a;
+	t a, x, y;
 	t T, A, D;
 
-	T=A=D=N F C if (v) { E(0) R }
-	if (1 Q) { L G U a S }
-	if (2 Q) { L N C F T(E(n+1)) L G U }
-	else { C x S L x C L x X }
-	if (1 Q) { L a C C F R }
-	a S prn(a, 0) R;
+	T=A=D=N F C if (v) { E(0) L G U a S E(7) L G U x S 
+			     prn(a, 0); printf("-- \n"); prn(x, 0) R }
+	V(3, L G U V(4, F y S,; ) x S,; );
+	V(4, L y V(2, V(1, U y S,; ) L x U x S L T C C F T(E(n+1)),
+		      U L x U L T C L y X),
+	    V(2, V(1, /*!*/ L N L N C, C a S L a C L a X),
+		L N C F T(E(n+1)) L G U));
+	V(3, L x V(4, L y,; ) C C F,; ) R;
 }
