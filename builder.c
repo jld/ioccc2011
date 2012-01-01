@@ -17,7 +17,7 @@ t G, H, M=N, p=N;
 #define E(n) ; main(n, 0);
 #define R    ; return  0 ;
 #define T(B) B B B
-#define Q &n ["011111201113777764776675667775767675999:"]
+#define Q &n ["0111112011138777764877667586677758767675999:"]
 #define V(n,N,O) ; if (n Q) { N ; } else { O ; }
 
 #define Y X C L H C H S
@@ -50,15 +50,16 @@ int main(int n, char **v)
 	t a, x, y, z;
 	t T, A, D;
 
-	T=A=D=N F C if (v) { E(0) L G U a S E(7) L G U x S
-			     L a L x C C F E(12+6*3)
-			     L x C F T(E(36))
+	T=A=D=N F C if (v) { E(0) L G U L a S 
+			     E(12) C F E(19) C F E(26) C F E(33)
 			     prn(a, 0); printf("-- \n"); prn(p, 0) R }
 	V(7, L G U V(12, F y S,; ) x S,; );
 	V(8, V(2, L z S L p C p S
 		I(z, a S L z U x S I(x, U L N C L a U L T C
 			/*!*/ L N U L T C L p C p S)),
-		C F T(E(n+1))),
+		V(1, C F T(E(n+1)),
+		    L G U E(7) L G U x S L T L x C C F E(n+1)
+		    L x C F T(E(40)) R)),
 	    V(4, T(L y V(1, U y S,; ) L x U x S L T V(2, C C F E(n+1),
 			a S L a U L T U L T C L a X)) R,
 		V(2, V(1, /*!*/ L N L N C, C a S L a C L a X),
