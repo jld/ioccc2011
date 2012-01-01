@@ -8,7 +8,7 @@ t G, H, M=N;
 #define Z ; if (A == D) goto
 #define C ; *(T =++ G) =D ++; D -= (G =* -- T) ||! (G = calloc(2, sizeof* N)); \
 	     *T ++= A; G -=(t) *T --- D; G -=!! (D = T);
-#define F ; A =* D; *D =G +!!G; D =* (G = D);
+#define F ; A =* D; *D ++=G +!!G; D =* (G = D); G -=!! G;
 #define U ; T = A; A =* D ++; D =* D;
 #define L ; A = D; D =
 #define S     = D; D = A;
@@ -44,7 +44,8 @@ int main(int n, char **v)
 	t a, x, y;
 	t T, A, D;
 
-	T=A=D=N F C if (v) { E(0) L G U a S E(7) L G U x S 
+	T=A=D=N F C if (v) { E(0) L G U a S E(7) L G U x S
+			     L a L x C C F E(12)
 			     prn(a, 0); printf("-- \n"); prn(x, 0) R }
 	V(3, L G U V(4, F y S,; ) x S,; );
 	V(4, L y V(2, V(1, U y S,; ) L x U x S L T C C F T(E(n+1)),
