@@ -49,8 +49,8 @@ int main(int n, char **v)
 			     prn(a, 0); printf("-- \n"); prn(x, 0) R }
 	V(7, L G U V(4, F y S,; ) x S,; );
 	V(4, T(L y V(1, U y S,; ) L x U x S L T V(2, C C F E(n+1),
-		    a S L a U L T U L T C L a X)),
+		    a S L a U L T U L T C L a X)) R,
 	    V(2, V(1, /*!*/ L N L N C, C a S L a C L a X),
 		L N C F T(E(n+1)) L G U));
-	V(7, L x V(4, L y,; ) C C F,; ) R;
+	V(3, L x C C F,; ) R;
 }
