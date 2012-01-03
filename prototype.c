@@ -64,7 +64,7 @@ int main(int n, char **v)
 			L x C F T(E(40)) R))),
 	    V(4, T(L y V(1, U y S,; ) L x U x S L T V(2, C C F E(n+1),
 			a S L a U L T U L T C L a X)) R,
-		V(2, V(1, /*!*/ L N L N C, C a S L a C L a X),
+		V(2, V(1, /*!*/ L N L N C, L N U C a S L H L a C L a X),
 		    L N C F T(E(n+1)) L G U)));
 	V(7, V(8, L y, L x C) C F,; ) R;
 pr:     putchar(h); h='.' Z rp;
@@ -76,7 +76,9 @@ s:      E(12) C F E(19) C F E(26) C F E(33) C F T(E(44));
 	L y L p Z bees; y S Z pa; as: L T U L y S W cb; oa: 
 	L M U Z unsat; T S L H Z ob F H S F X D S Z oa; ob: printf("conf\n");
 	L M F M S L z U L D W pa; bees: printf("bees\n");
-	L p U U T S U U D S L z Y L H L M C M S L z U U L D W pa;
+	L p U U T S U U D S;
+	U D S L N Z ya; L T L A Z yb; ya: L T U yb: L z Y
+	L H L M C M S L z U U L D W pa;
 
 sat:	printf("done\n") L a C F T(E(44)) unsat: R;
 }
