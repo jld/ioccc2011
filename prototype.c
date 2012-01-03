@@ -71,12 +71,12 @@ pr:     putchar(h); h='.' Z rp;
 
 s:      E(12) C F E(19) C F E(26) C F E(33) C F T(E(44));
 
-	L p C p S y S C z S pa: L p L c S U U Z sat;
+	L p C p S y S C z S pa: printf("go ") L p L c S U U Z sat;
 	I(c, x S l S I(l, U Z lb U Z cb) L x U U Z oa U Z as);
 	L y L p Z bees; y S Z pa; as: L T U L y S W cb; oa: 
-	L M U Z unsat; T S L H Z ob F H S F X D S Z oa; ob:
-	L M F M S L z U L D W pa; bees: 
+	L M U Z unsat; T S L H Z ob F H S F X D S Z oa; ob: printf("conf\n");
+	L M F M S L z U L D W pa; bees: printf("bees\n");
 	L p U U T S U U D S L z Y L H L M C M S L z U U L D W pa;
 
-sat:	L a C F T(E(44)) unsat: R;
+sat:	printf("done\n") L a C F T(E(44)) unsat: R;
 }

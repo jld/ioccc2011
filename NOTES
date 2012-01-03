@@ -214,3 +214,20 @@ V(2, c='0') V(3, put TE get, c+=c>'/') U V(2, V(1, A+=c<'/'; c='.', c='\n'), V(1
 
 121310
 =>=?=<
+
+====
+
+So, a better idea than this first/second solution thing.
+
+Theorem: On sat, the chain of unflipped decisions is sufficient to
+limit the problem to that unique assignment.  Sketch: flipped
+decisions are consequences of previous decisions, since contradiction
+was derived from the opposite; and other assignments are unitprop.
+(This is probably still true in the presence of learning, because
+resolution, but irrelevant here.)  (Also, the notion of equivalence
+for "unique" needs work; maybe over intersection of domains of all
+satisfying assignments.)
+
+Thus, do normal sat, decisions being random "positive" sides of
+unassigned atoms, and on sat roll everything back, recording the
+w.D's, and then assign those and print.
