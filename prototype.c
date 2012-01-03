@@ -71,10 +71,10 @@ pr:     putchar(h); h='.' Z rp;
 
 s:      E(12) C F E(19) C F E(26) C F E(33) /* C F T(E(44))*/;
 
-	L p C L p S y S C z S pa: n=1; /*printf("go ")*/ L p L c S U U Z sat;
-	I(c, x S l S I(l, U Z lb U Z cb
+	L p C L p S y S C z S pa: n=1; /*printf("go ")*/ L p;
+	c S I(c, x S l S I(l, U Z lb U Z cb
 		L A+!(random()%n++) Z ld; q S q S ld:) L x U U Z oa U Z as);
-	L y L p Z bees; y S Z pa; as: L T U L y S W cb; oa: 
+	L p U U Z sat L y L p Z bees; y S Z pa; as: L T U L y S W cb; oa: 
 	L M U Z unsat; T S L H Z ob F H S F X D S Z oa; ob: /*printf("conf\n");*/
 	L M F M S L z U L D W pa; bees: /*printf("bees %d\n", n);*/
 	L q L A;
