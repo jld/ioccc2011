@@ -47,10 +47,10 @@ void prn(t T, int l)
 
 int main(int n, char **v)
 {
-	t a, c, l, x, y, z;
+	t a, c, l, q, x, y, z;
 	t T, A, D;
 
-	T=A=D=N F C if (v) { E(0) L G U L a S Z s; }
+	T=A=D=N F C if (v) { v[1]&&(srandom(atoi(v[1])),0); E(0) L G U L a S Z s; }
 	V(7, L G U V(12, F y S,; ) x S,; );
 	V(8, V(4, L x L y C T S V(2, h='0',; )
 		V(3, C F T(E(n+1)) L G U, h+=h>'/') U
@@ -69,18 +69,19 @@ int main(int n, char **v)
 	V(7, V(8, L y, L x C) C F,; ) R;
 pr:     putchar(h); h='.' Z rp;
 
-s:      E(12) C F E(19) C F E(26) C F E(33) C F T(E(44));
+s:      E(12) C F E(19) C F E(26) C F E(33) /* C F T(E(44))*/;
 
-	L p C p S y S C z S pa: printf("go ") L p L c S U U Z sat;
-	I(c, x S l S I(l, U Z lb U Z cb) L x U U Z oa U Z as);
+	L p C L p S y S C z S pa: n=1; /*printf("go ")*/ L p L c S U U Z sat;
+	I(c, x S l S I(l, U Z lb U Z cb
+		L A+!(random()%n++) Z ld; q S q S ld:) L x U U Z oa U Z as);
 	L y L p Z bees; y S Z pa; as: L T U L y S W cb; oa: 
-	L M U Z unsat; T S L H Z ob F H S F X D S Z oa; ob: printf("conf\n");
-	L M F M S L z U L D W pa; bees: printf("bees\n");
-	L p U U T S U U D S;
+	L M U Z unsat; T S L H Z ob F H S F X D S Z oa; ob: /*printf("conf\n");*/
+	L M F M S L z U L D W pa; bees: /*printf("bees %d\n", n);*/
+	L q L A;
 	U D S L N Z ya; L T L A Z yb; ya: L T U yb: L z Y
 	L H L M C M S L z U U L D W pa;
 
-sat:	printf("done\n") L a C F T(E(44)) L N;
+sat:	/* printf("done\n") L a C F T(E(44)) */ L N;
 	y S pp:
 	L M U Z po; T S L H Z pq F H S F X D S Z pp; pq:
 	L M F M S L z U L y C y S Z pp; po:
