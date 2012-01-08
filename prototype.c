@@ -53,6 +53,7 @@ int main(int n, char **v)
 		    L N C F T(E(n+1)) L G U)));
 	V(7, V(8, L y, L x C) C F,; ) R;
 pr:     putchar(h); h='.' Z rp;
+aa:     J(v) Z va; vc: d+=(b=1) Z pa;
 
 s:      E(12) C F E(19) C F E(26) C F E(33) /* C F T(E(44))*/;
 
@@ -69,5 +70,4 @@ sat:	/* printf("done\n") L a C F T(E(44)) */ L N;
 	y S J(w) L z U L y C y S Z wa; wc:
 	L y F Z wd; y S U L D W wc; wd:
 	C L a C F T(E(44)) oc: R;
-aa:  R;
 }
