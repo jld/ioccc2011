@@ -38,7 +38,7 @@ int main(int n, char **v)
 	T=A=D=N F C if (v) { srandom(v[1]?atoi(v[1]):time(0)) Z s; }
 	V(7, L G U V(12, F y S,; ) x S,; );
 	V(8, V(4, L x L y C T S V(2, h='0',; )
-		V(3, C F T(E(n+1)) L G U, h+=h>'/') U
+		V(3, C F T(E(n+1)) L G U, h+=(h>'/')+7*!(h-'9')) U
 		V(2, V(1, A+=h<'/'; h='.', h='\n'), V(1, A++,; ))
 		Z pr; rp:,
 		V(2, L z S L p C p S
