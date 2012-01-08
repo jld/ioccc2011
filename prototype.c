@@ -58,7 +58,7 @@ aa:     J(v) Z va; vc: d+=(b=1) Z pa;
 
 s:      E(0) L G U L a S E(12) C F E(19) C F E(26) C F E(33);
 
-	L p C L p S y S b=d=1 C z S pa: n=1; L p;
+	L p C L p S y S b=d=1 C z S pa: n=1 L p;
 	c S I(c, x S l S I(l, U Z lb U Z cb
 		L A+!(random()%n++) Z ld; q S q S ld:) L x U U Z oa U Z as);
 	L p U U Z sat L y L p Z bees; y S Z pa; as: L T U L y S W cb;
