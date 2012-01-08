@@ -31,6 +31,7 @@ char h;
 
 int main(int n, char **v)
 {
+	int b, d;
 	t a, c, l, q, x, y, z;
 	t T, A, D;
 
@@ -55,18 +56,18 @@ pr:     putchar(h); h='.' Z rp;
 
 s:      E(12) C F E(19) C F E(26) C F E(33) /* C F T(E(44))*/;
 
-	L p C L p S y S C z S pa: n=1; /*printf("go ")*/ L p;
+	L p C L p S y S C z S pb: b=d=1; pa: n=1; /*printf("go ")*/ L p;
 	c S I(c, x S l S I(l, U Z lb U Z cb
 		L A+!(random()%n++) Z ld; q S q S ld:) L x U U Z oa U Z as);
 	L p U U Z sat L y L p Z bees; y S Z pa; as: L T U L y S W cb;
-	J(o) L z U L D W pa; bees: /*printf("bees %d\n", n);*/
-	L q L A;
+	J(o) A+=(b-=d+1)>-1 Z aa L z U L D W pa; bees: /*printf("bees %d\n", n);*/
+	b+=d L q L A;
 	U D S L N Z ya; L T L A Z yb; ya: L T U yb: L z Y
 	L H L M C M S L z U U L D W pa;
 
 sat:	/* printf("done\n") L a C F T(E(44)) */ L N;
 	y S J(w) L z U L y C y S Z wa; wc:
 	L y F Z wd; y S U L D W wc; wd:
-	C L a C F T(E(44));
-oc:  R;
+	C L a C F T(E(44)) oc: R;
+aa:  R;
 }
