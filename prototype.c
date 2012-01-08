@@ -20,6 +20,9 @@ char h;
 #define I(P,B) P##a: L P U U Z P##c; D S B L P U P S Z P##a; \
                P##b: L P U U L P Y Z P##a; P##c:
 
+#define J(P) P##a: L M U Z P##c; T S L H Z P##b F H S F X D S Z P##a; \
+             P##b: L M F M S
+
 #define E(n) ; main(n, 0);
 #define R    ; return  0 ;
 #define T(B) B B B
@@ -55,18 +58,15 @@ s:      E(12) C F E(19) C F E(26) C F E(33) /* C F T(E(44))*/;
 	L p C L p S y S C z S pa: n=1; /*printf("go ")*/ L p;
 	c S I(c, x S l S I(l, U Z lb U Z cb
 		L A+!(random()%n++) Z ld; q S q S ld:) L x U U Z oa U Z as);
-	L p U U Z sat L y L p Z bees; y S Z pa; as: L T U L y S W cb; oa: 
-	L M U Z unsat; T S L H Z ob F H S F X D S Z oa; ob: /*printf("conf\n");*/
-	L M F M S L z U L D W pa; bees: /*printf("bees %d\n", n);*/
+	L p U U Z sat L y L p Z bees; y S Z pa; as: L T U L y S W cb;
+	J(o) L z U L D W pa; bees: /*printf("bees %d\n", n);*/
 	L q L A;
 	U D S L N Z ya; L T L A Z yb; ya: L T U yb: L z Y
 	L H L M C M S L z U U L D W pa;
 
 sat:	/* printf("done\n") L a C F T(E(44)) */ L N;
-	y S pp:
-	L M U Z po; T S L H Z pq F H S F X D S Z pp; pq:
-	L M F M S L z U L y C y S Z pp; po:
-	L y F Z pn; y S U L D W po; pn:
+	y S J(w) L z U L y C y S Z wa; wc:
+	L y F Z wd; y S U L D W wc; wd:
 	C L a C F T(E(44));
-unsat:  R;
+oc:  R;
 }
