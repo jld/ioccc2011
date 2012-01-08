@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <time.h>
 
 typedef void **t;
 void *N[] = {N, N};
@@ -34,7 +35,7 @@ int main(int n, char **v)
 	int b, d;
 	t a, c, l, q, x, y, z, T, A, D;
 
-	T=A=D=N F C if (v) { v[1]&&(srandom(atoi(v[1])),0) Z s; }
+	T=A=D=N F C if (v) { srandom(v[1]?atoi(v[1]):time(0)) Z s; }
 	V(7, L G U V(12, F y S,; ) x S,; );
 	V(8, V(4, L x L y C T S V(2, h='0',; )
 		V(3, C F T(E(n+1)) L G U, h+=h>'/') U
