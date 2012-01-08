@@ -26,25 +26,6 @@ char h;
 #define Q &n ["0111112011138777764877667586677758767675999:=>=?=<"]
 #define V(n,N,O) ; if (n Q) { N ; } else { O ; }
 
-void prn(t T, int l)
-{
-	int i, n=0;
-	t A=T;
-
-	if (T != N && ((t)T[1])[1] == T) {
-		for (i = 0; i < l; ++i) printf(" ");
-		printf("%p %p = atom\n", (void*)T, T[1]);
-		return;
-	}
-
-	while (T != N) {
-		for (i = 0; i < l; ++i) printf(" ");
-		printf("%p[%d] = %p\n", (void*)A, n++, (void*)T[0]);
-		prn(T[0], l+1);
-		T = T[1];
-	}
-}
-
 int main(int n, char **v)
 {
 	t a, c, l, q, x, y, z;
