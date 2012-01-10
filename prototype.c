@@ -5,7 +5,7 @@
 typedef void **t;
 void *N[] = {N, N};
 t G, H, M=N, p=N;
-char h;
+int h;
 
 #define Z ; if (A == D) goto
 #define C ; *(T =++ G) =D ++; D -= (G =* -- T) ||! (G = calloc(2, sizeof* N)); \
@@ -24,7 +24,7 @@ char h;
 #define J(P) P##a: L M U Z P##c; T S L H Z P##b F H S F X D S Z P##a; \
              P##b: L M F M S
 
-#define E(n) ; main(n, 0);
+#define E(m) ; n += main(m, 0);
 #define R    ; return  0 ;
 #define T(B) B B B
 #define Q &n ["0111112011138777764877667586677758767675999:=>=?=<"]
@@ -53,7 +53,7 @@ int main(int n, char **v)
 		V(2, V(1, L N C, L N U C a S L H L a C L a X),
 		    L N C F T(E(n+1)) L G U)));
 	V(7, V(8, L y, L x C) C F,; ) R;
-pr:     putchar(h); h='.' Z rp;
+pr:     (void)putchar(h); h='.' Z rp;
 aa:     J(v) Z va; vc: d+=(b=1) Z pa;
 
 s:      E(0) L G U L a S E(12) C F E(19) C F E(26) C F E(33);
