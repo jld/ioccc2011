@@ -4,7 +4,7 @@
 
 typedef void **t;
 void *A[] = {A, A};
-t T, U, Z=A, u=A;
+t T, U, u=A, Z=A;
 int h;
 
 #define M ; if (N == Q) goto
@@ -38,7 +38,7 @@ int main(int n, char **v)
 	G=N=Q=A S q=w=x=y=z=U P I(32 *! v,
 	    I(7, Y T H I(12, S y F,; ) x F,; ),
 	    srandom((unsigned)(v[1]?atoi(v[1]):time(0))) M e;
-p:      (void)putchar(h); h=46 M q;);
+p:      (void)putchar(h); h=46 M q);
 	I(8, I(4, Y x Y y P G F I(2, h=48,; )
 		I(3, P S G(R(n+1)) Y T H, h+=(h>47)+7*!(h-57)) H
 		I(2, I(1, N+=h<47; h=46, h=10), I(1, N++,; ))
