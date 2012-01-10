@@ -27,7 +27,7 @@ int h;
 #define R(m) ; n += main(m, 0);
 #define E    ; return  0 ;
 #define G(O) O O O
-#define D &n ["0111112011138777764877667586677758767675999:=>=?=<"]
+#define D &n ["paQA1!r`QA1#xgWG7&thWG6&weXF6'wgUH7&wfWE9)yj]N=/}l"]
 #define I(n,A,B) ; if (n D) { A ; } else { B ; }
 
 int main(int n, char **v)
@@ -35,7 +35,7 @@ int main(int n, char **v)
 	int b, d=n;
 	t q, r, s, w, x, y, z, G, N, Q;
 
-	G=N=Q=A S q=w=x=y=z=U P I(32 *! v,
+	G=N=Q=A S q=w=x=y=z=U P I(96 *! v,
 	    I(7, Y T H I(12, S y F,; ) x F,; ),
 	    srandom((unsigned)(v[1]?atoi(v[1]):time(0))) M e;
 p:      (void)putchar(h); h=46 M q);
