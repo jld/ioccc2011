@@ -8,13 +8,13 @@ t T, U, u=A, Z=A;
 int h;
 
 #define M ; if (N == Q) goto
+#define S ; N =* Q; *Q ++=T +!!T; Q =* (T = Q); T -=!! T;
 #define P ; *(G =++ T) =Q ++; Q -= (T =* -- G) ||! (T = calloc(2, sizeof* A)); \
 	     *G ++= N; T -=(t) *G --- Q; T -=!! (Q = G);
-#define S ; N =* Q; *Q ++=T +!!T; Q =* (T = Q); T -=!! T;
-#define H ; G = N; N =* Q ++; Q =* Q;
+#define H ; G = N; N =* Q++;  Q =* Q;
+#define K ; G = N; N =* ++Q; *Q --= G;
 #define Y ; N = Q; Q =
 #define F     = Q; Q = N;
-#define K ; G = N; N =* ++Q; *Q --= G;
 
 #define L K P Y U P U F
 #define J H Q F Y G L M
