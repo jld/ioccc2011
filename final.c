@@ -37,11 +37,11 @@ int main(int n, char **v)
 
 	T=A=D=N F q=w=x=y=z=H C V(32 *! v,
 	    V(7, L G U V(12, F y S,; ) x S,; ),
-	    srandom((unsigned)(v[1]?atoi(v[1]):time(0))) Z s);
+	    srandom((unsigned)(v[1]?atoi(v[1]):time(0))) Z e);
 	V(8, V(4, L x L y C T S V(2, h='0',; )
 		V(3, C F T(E(n+1)) L G U, h+=(h>'/')+7*!(h-'9')) U
 		V(2, V(1, A+=h<'/'; h='.', h='\n'), V(1, A++,; ))
-		Z pr; rp:,
+		Z p; q:,
 		V(2, L z S L u C u S
 		    I(z, w S L z U x S I(x, U L N C Z xb L w U L T C
 			    L T C Z zb L u C u S)),
@@ -53,21 +53,21 @@ int main(int n, char **v)
 		V(2, V(1, L N C, L N U C w S L H L w C L w X),
 		    L N C F T(E(n+1)) L G U)));
 	V(7, V(8, L y, L x C) C F,; ) R;
-pr:     (void)putchar(h); h='.' Z rp;
-aa:     J(v) Z va; vc: d+=(b=1) Z pa;
+p:     (void)putchar(h); h='.' Z q;
+a:     J(v) Z va; vc: d+=(b=1) Z t;
 
-s:      E(0) L G U L w S E(12) C F E(19) C F E(26) C F E(33);
+e:      E(0) L G U L w S E(12) C F E(19) C F E(26) C F E(33);
 
-	L u C L u S y S b=d=1 C z S pa: n=1 L u;
+	L u C L u S y S b=d=1 C z S t: n=1 L u;
 	r S I(r, x S s S I(s, U Z sb U Z rb
-		L A+!(random()%n++) Z sd; q S q S sd:) L x U U Z oa U Z as);
-	L u U U Z sat L y L u Z bees; y S Z pa; as: L T U L y S W rb;
-	J(o) A+=(b-=d+1)>-1 Z aa L z U L D W pa; bees: b+=d L q L A;
-	U D S L N Z ya; L T L A Z yb; ya: L T U yb: L z Y
-	L H L M C M S L z U U L D W pa;
+		L A+!(random()%n++) Z sd; q S q S sd:) L x U U Z ua U Z s);
+	L u U U Z r L y L u Z b; y S Z t; s: L T U L y S W rb;
+	J(u) A+=(b-=d+1)>-1 Z a L z U L D W t; b: b+=d L q L A;
+	U D S L N Z g; L T L A Z h; g: L T U h: L z Y
+	L H L M C M S L z U U L D W t;
 
-sat:	L N;
-	y S J(n) L z U L y C y S Z na; nc:
-	L y F Z nd; y S U L D W nc; nd:
-	C L w C F T(E(44)) oc: R;
+r:	L N;
+	y S J(y) L z U L y C y S Z ya; yc:
+	L y F Z yd; y S U L D W yc; yd:
+	C L w C F T(E(44)) uc: R;
 }
