@@ -3,71 +3,71 @@
 #include <time.h>
 
 typedef void **t;
-void *N[] = {N, N};
-t G, H, M=N, u=N;
+void *A[] = {A, A};
+t T, U, Z=A, u=A;
 int h;
 
-#define Z ; if (A == D) goto
-#define C ; *(T =++ G) =D ++; D -= (G =* -- T) ||! (G = calloc(2, sizeof* N)); \
-	     *T ++= A; G -=(t) *T --- D; G -=!! (D = T);
-#define F ; A =* D; *D ++=G +!!G; D =* (G = D); G -=!! G;
-#define U ; T = A; A =* D ++; D =* D;
-#define L ; A = D; D =
-#define S     = D; D = A;
-#define X ; T = A; A =* ++D; *D --= T;
+#define M ; if (N == Q) goto
+#define P ; *(G =++ T) =Q ++; Q -= (T =* -- G) ||! (T = calloc(2, sizeof* A)); \
+	     *G ++= N; T -=(t) *G --- Q; T -=!! (Q = G);
+#define S ; N =* Q; *Q ++=T +!!T; Q =* (T = Q); T -=!! T;
+#define H ; G = N; N =* Q ++; Q =* Q;
+#define Y ; N = Q; Q =
+#define F     = Q; Q = N;
+#define K ; G = N; N =* ++Q; *Q --= G;
 
-#define Y X C L H C H S
-#define W U D S L T Y Z
-#define I(P,B) P: L P U U Z P##b; D S B L P U P S Z P; \
-               P##a: L P U U L P Y Z P; P##b:
+#define L K P Y U P U F
+#define J H Q F Y G L M
+#define V(C,O) C: Y C H H M C##b; Q F O Y C H C F M C; \
+               C##a: Y C H H Y C L M C; C##b:
 
-#define J(P) P: L M U Z P##b; T S L H Z P##a F H S F X D S Z P; \
-             P##a: L M F M S
+#define W(C) C: Y Z H M C##b; G F Y U M C##a S U F S K Q F M C; \
+             C##a: Y Z S Z F
 
-#define E(m) ; n += main(m, 0);
-#define R    ; return  0 ;
-#define T(B) B B B
-#define Q &n ["0111112011138777764877667586677758767675999:=>=?=<"]
-#define V(n,N,O) ; if (n Q) { N ; } else { O ; }
+#define R(m) ; n += main(m, 0);
+#define E    ; return  0 ;
+#define G(O) O O O
+#define D &n ["0111112011138777764877667586677758767675999:=>=?=<"]
+#define I(n,A,B) ; if (n D) { A ; } else { B ; }
 
 int main(int n, char **v)
 {
 	int b, d=n;
-	t q, r, s, w, x, y, z, T, A, D;
+	t q, r, s, w, x, y, z, G, N, Q;
 
-	T=A=D=N F q=w=x=y=z=H C V(32 *! v,
-	    V(7, L G U V(12, F y S,; ) x S,; ),
-	    srandom((unsigned)(v[1]?atoi(v[1]):time(0))) Z e;
-p:      (void)putchar(h); h=46 Z q;);
-	V(8, V(4, L x L y C T S V(2, h=48,; )
-		V(3, C F T(E(n+1)) L G U, h+=(h>47)+7*!(h-57)) U
-		V(2, V(1, A+=h<47; h=46, h=10), V(1, A++,; ))
-		Z p; q:,
-		V(2, L z S L u C u S
-		    I(z, w S L z U x S I(x, U L N C Z xa L w U L T C
-			    L T C Z za L u C u S)),
-		    V(1, C F T(E(n+1)),
-			L G U E(7) L G U x S L T L x C C F E(n+1)
-			L x C F T(E(40)) R))),
-	    V(4, T(L y V(1, U y S,; ) L x U x S L T V(2, C C F E(n+1),
-			w S L w U L T U L T C L w X)) R,
-		V(2, V(1, L N C, L N U C w S L H L w C L w X),
-		    L N C F T(E(n+1)) L G U)));
-	V(7, V(8, L y, L x C) C F,; ) R;
+	G=N=Q=A S q=w=x=y=z=U P I(32 *! v,
+	    I(7, Y T H I(12, S y F,; ) x F,; ),
+	    srandom((unsigned)(v[1]?atoi(v[1]):time(0))) M e;
+p:      (void)putchar(h); h=46 M q;);
+	I(8, I(4, Y x Y y P G F I(2, h=48,; )
+		I(3, P S G(R(n+1)) Y T H, h+=(h>47)+7*!(h-57)) H
+		I(2, I(1, N+=h<47; h=46, h=10), I(1, N++,; ))
+		M p; q:,
+		I(2, Y z F Y u P u F
+		    V(z, w F Y z H x F V(x, H Y A P M xa Y w H Y G P
+			    Y G P M za Y u P u F)),
+		    I(1, P S G(R(n+1)),
+			Y T H R(7) Y T H x F Y G Y x P P S R(n+1)
+			Y x P S G(R(40)) E))),
+	    I(4, G(Y y I(1, H y F,; ) Y x H x F Y G I(2, P P S R(n+1),
+			w F Y w H Y G H Y G P Y w K)) E,
+		I(2, I(1, Y A P, Y A H P w F Y U Y w P Y w K),
+		    Y A P S G(R(n+1)) Y T H)));
+	I(7, I(8, Y y, Y x P) P S,; ) E;
 
-e:      E(0) L G U L w S E(12) C F E(19) C F E(26) C F E(33);
+e:      R(0) Y T H Y w F R(12) P S R(19) P S R(26) P S R(33);
 
-	L u C L u S y S b=d=1 C z S t: n=1 L u;
-	r S I(r, x S s S I(s, U Z sa U Z ra
-		L A+!(random()%n++) Z sc; q S q S sc:) L x U U Z u U Z o);
-	L u U U Z w L y L u Z b; y S Z t; a: J(v) Z v; vb:
-	d+=(b=1) Z t; o: L T U L y S W ra;
-	J(u) A+=(b-=d+1)>-1 Z a L z U L D W t; b: b+=d L q L A;
-	U D S L N Z g; L T L A Z h; g: L T U h: L z Y
-	L H L M C M S L z U U L D W t;
+	Y u P Y u F y F b=d=1 P z F t: n=1 Y u;
+	r F V(r, x F s F V(s, H M sa H M ra
+		Y N+!(random()%n++) M sc; q F q F sc:) Y x H H M u H M o);
+	Y u H H M w Y y Y u M b; y F M t; a: W(v) M v; vb:
+	d+=(b=1) M t; o: Y G H Y y F J ra;
+	W(u) N+=(b-=d+1)>-1 M a Y z H Y Q J t; b: b+=d Y q Y N;
+	H Q F Y A M g; Y G Y N M h; g: Y G H h: Y z L
+	Y U Y Z P Z F Y z H H Y Q J t;
 
-w:	L N;
-	y S J(y) L z U L y C y S Z y; yb:
-	L y F Z yc; y S U L D W yb; yc:
-	C L w C F T(E(44)) ub: R;
+w:	Y A;
+	y F W(y) Y z H Y y P y F M y; yb:
+	Y y S M yc; y F H Y Q J yb; yc:
+	P Y w P S G(R(44)) ub: E;
 }
