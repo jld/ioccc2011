@@ -60,13 +60,13 @@ e:      E(0) L G U L w S E(12) C F E(19) C F E(26) C F E(33);
 
 	L u C L u S y S b=d=1 C z S t: n=1 L u;
 	r S I(r, x S s S I(s, U Z sb U Z rb
-		L A+!(random()%n++) Z sd; q S q S sd:) L x U U Z ua U Z s);
-	L u U U Z r L y L u Z b; y S Z t; s: L T U L y S W rb;
+		L A+!(random()%n++) Z sd; q S q S sd:) L x U U Z ua U Z o);
+	L u U U Z w L y L u Z b; y S Z t; o: L T U L y S W rb;
 	J(u) A+=(b-=d+1)>-1 Z a L z U L D W t; b: b+=d L q L A;
 	U D S L N Z g; L T L A Z h; g: L T U h: L z Y
 	L H L M C M S L z U U L D W t;
 
-r:	L N;
+w:	L N;
 	y S J(y) L z U L y C y S Z ya; yc:
 	L y F Z yd; y S U L D W yc; yd:
 	C L w C F T(E(44)) uc: R;
