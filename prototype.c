@@ -9,7 +9,7 @@ int h;
 
 #define Z ; if (A == D) goto
 #define F ; A =* D; *D ++=G +!!G; D =* (G = D); G -=!! G;
-#define C ; *(T =++ G) =D ++; D -= (G =* -- T) ||! (G = calloc(2, sizeof* N)); \
+#define C ; *(T =++ G) =D ++; D -= (G= *-- T) ||! (G = calloc(2, sizeof* N)); \
 	     *T ++= A; G -=(t) *T --- D; G -=!! (D = T);
 #define U ; T = A; A =* D++; D  =* D;
 #define X ; T = A; A =* ++D; *D --= T;

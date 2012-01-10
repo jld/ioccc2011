@@ -9,7 +9,7 @@ int h;
 
 #define M ; if (N == Q) goto
 #define S ; N =* Q; *Q ++=T +!!T; Q =* (T = Q); T -=!! T;
-#define P ; *(G =++ T) =Q ++; Q -= (T =* -- G) ||! (T = calloc(2, sizeof* A)); \
+#define P ; *(G =++ T) =Q ++; Q -= (T= *-- G) ||! (T = calloc(2, sizeof* A)); \
 	     *G ++= N; T -=(t) *G --- Q; T -=!! (Q = G);
 #define H ; G = N; N =* Q++;  Q =* Q;
 #define K ; G = N; N =* ++Q; *Q --= G;
