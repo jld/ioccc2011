@@ -18,11 +18,10 @@ int h;
 
 #define L K P Y U P U F
 #define J H Q F Y G L M
-#define V(C,O) C: Y C H H M C##b; Q F O Y C H C F M C; \
-               C##a: Y C H H Y C L M C; C##b:
-
-#define W(C) C: Y Z H M C##b; G F Y U M C##a S U F S K Q F M C; \
-             C##a: Y Z S Z F
+#define V(C,O) C: Y C H H M C##b; Q F O Y C H C F \
+               M C; C##a: Y C H H Y C L M C; C##b:
+#define W(C) C: Y Z H M C##b; G F Y U M C##a S \
+             U F S K Q F M C; C##a: Y Z S Z F
 
 #define R(m) ; n += main(m, 0);
 #define E    ; return  0 ;

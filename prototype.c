@@ -18,11 +18,10 @@ int h;
 
 #define Y X C L H C H S
 #define W U D S L T Y Z
-#define I(P,B) P: L P U U Z P##b; D S B L P U P S Z P; \
-               P##a: L P U U L P Y Z P; P##b:
-
-#define J(P) P: L M U Z P##b; T S L H Z P##a F H S F X D S Z P; \
-             P##a: L M F M S
+#define I(P,B) P: L P U U Z P##b; D S B L P U P S \
+	       Z P; P##a: L P U U L P Y Z P; P##b:
+#define J(P) P: L M U Z P##b; T S L H Z P##a F \
+             H S F X D S Z P; P##a: L M F M S
 
 #define E(m) ; n += main(m, 0);
 #define R    ; return  0 ;
