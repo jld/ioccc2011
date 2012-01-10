@@ -35,7 +35,7 @@ int main(int n, char **v)
 	int b, d=n;
 	t a, c, l, q, x, y, z, T, A, D;
 
-	T=A=D=N F C a=q=x=y=z=G V(32 *! v,
+	T=A=D=N F a=q=x=y=z=H C V(32 *! v,
 	    V(7, L G U V(12, F y S,; ) x S,; ),
 	    srandom((unsigned)(v[1]?atoi(v[1]):time(0))) Z s);
 	V(8, V(4, L x L y C T S V(2, h='0',; )
