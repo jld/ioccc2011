@@ -38,9 +38,9 @@ int main(int n, char **v)
 	T=A=D=N F q=w=x=y=z=H C V(32 *! v,
 	    V(7, L G U V(12, F y S,; ) x S,; ),
 	    srandom((unsigned)(v[1]?atoi(v[1]):time(0))) Z e);
-	V(8, V(4, L x L y C T S V(2, h='0',; )
-		V(3, C F T(E(n+1)) L G U, h+=(h>'/')+7*!(h-'9')) U
-		V(2, V(1, A+=h<'/'; h='.', h='\n'), V(1, A++,; ))
+	V(8, V(4, L x L y C T S V(2, h=48,; )
+		V(3, C F T(E(n+1)) L G U, h+=(h>47)+7*!(h-57)) U
+		V(2, V(1, A+=h<47; h=46, h=10), V(1, A++,; ))
 		Z p; q:,
 		V(2, L z S L u C u S
 		    I(z, w S L z U x S I(x, U L N C Z xb L w U L T C
@@ -53,7 +53,7 @@ int main(int n, char **v)
 		V(2, V(1, L N C, L N U C w S L H L w C L w X),
 		    L N C F T(E(n+1)) L G U)));
 	V(7, V(8, L y, L x C) C F,; ) R;
-p:     (void)putchar(h); h='.' Z q;
+p:     (void)putchar(h); h=46 Z q;
 a:     J(v) Z va; vc: d+=(b=1) Z t;
 
 e:      E(0) L G U L w S E(12) C F E(19) C F E(26) C F E(33);
