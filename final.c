@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <time.h>
 
+
 #define M ; if (N == Q) goto
 #define S ; N =* Q; *Q ++=T +!!T; Q =* (T = Q); T -=!! T;
 #define P ; *(G =++ T) =Q ++; Q -= (T= *-- G) ||! (T = calloc(2, sizeof* A)); \
@@ -23,6 +24,9 @@
 #define G(O) O O O
 #define D &n ["paQA1!r`QA1#xgWG7&thWG6&weXF6'wgUH7&wfWE9)yj]N=/}l"]
 #define I(n,A,B) ; if (n D) { A ; } else { B ; }
+
+
+
 
 typedef          void        **   t;   void    *A[        ]  =  {A,  A};  t  T,
 U   ,u=    A,Z    =A;        int   h;   int   main        (int    n   ,char   *
