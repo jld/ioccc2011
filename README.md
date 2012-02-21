@@ -55,3 +55,12 @@ I forgot about until several hours after the contest deadline.
 However, it is satisfied by essentially every known C environment, and
 I'm told that it may also be guaranteed by POSIX (as an extension of
 ANSI C proper).
+
+
+To Do
+-----
+
+I should probably write up an actual explanation of what's going on
+here (i.e., a “spoiler” in the Nethack sense).  It's not _quite_ as
+complicated as it seems.
+
